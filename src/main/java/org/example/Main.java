@@ -1,17 +1,13 @@
 package org.example;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
-
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-        }
+        Rectangle rectangle = new Rectangle(2.3, 3.4, "Белый", "Красный");
+        Triangle triangle = new Triangle(4.5, 5.4, 8.2, "Синий", "Красный");
+        Circle circle = new Circle(23.34, "Жёлтый", "Фиолетовый");
+        //Выводим в консоль информацию о фигурах используя реализацию default метода в интерфейсе.
+        System.out.println(rectangle);
+        System.out.println(triangle);
+        System.out.println(circle);
     }
 }
